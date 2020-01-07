@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/imageview_width"
+        android:layout_height="@dimen/imageview_width"
+        android:layout_marginStart="@dimen/imageview_margin"
+        android:layout_marginLeft="@dimen/imageview_margin"
+        android:layout_marginTop="@dimen/imageview_margin"
+        android:scaleType="fitXY"
+        android:src="@drawable/steve_mama"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/imageview_margin"
+        android:layout_marginLeft="@dimen/imageview_margin"
+        android:text="John Wick"
+        android:textColor="#3e4148"
+        android:textSize="@dimen/title_textscize"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/content_start"
+        android:layout_marginLeft="@dimen/content_start"
+        android:layout_marginEnd="@dimen/imageview_margin"
+        android:layout_marginRight="@dimen/imageview_margin"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Just accepted your invitation"
+        android:textColor="#adb2bf"
+        android:textSize="@dimen/sp14"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/content_margin"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="2 hours ago"
+        android:textColor="#adb2bf"
+        android:textSize="@dimen/time_textscize"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/base_line"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/baseline_height"
+        android:layout_marginLeft="@dimen/baseline_left"
+        android:layout_marginTop="@dimen/baseline_top"
+        android:background="#adb2bf"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+</androidx.constraintlayout.widget.ConstraintLayout>
